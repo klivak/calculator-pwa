@@ -14,14 +14,22 @@ header {
 }
 
 .calculator {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
 
   &-container {
-    background: gray;
+    background: #95e048;
     border: 1px solid black;
-    max-width: 500px;
   }
+
+  .input {
+    text-align: right;
+  }
+
+  .form-result {
+    text-align: right;
+  }
+
+  .btn {
+    margin-bottom: 5px;
+  }
+
 }
