@@ -90,7 +90,8 @@
         <div class="calculator-result container">
             <div class="row">
                 <div class="col-md-12">
-                    <div v-for="item in items">
+                    <div v-for="item in items"
+                         :key="item">
                         {{ item.formula }} = {{ item.total }}
                     </div>
                 </div>
@@ -114,9 +115,6 @@
                 this.result += item;
             },
             math(item) {
-                this.result += item.toString();
-            },
-            unique(item) {
                 this.result += item.toString();
             },
             equal() {
